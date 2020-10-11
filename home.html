@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Haukai Restaurant homepage</title>
+    <script src='./scripts/scripts.js'></script>
+</head>
+
+<body>
+    <header class="header w3-green">
+        <strong>Haukai Restaurant</strong>
+    </header>
+    <nav class="w3-bar w3-black">
+        <a href='./index.html' class="w3-bar-item w3-button">Home</a>
+        <a href='./contact.html' class="w3-bar-item w3-button">Contact</a>
+        <a href='./calendar.html' class="w3-bar-item w3-button">Hours</a>
+        <a href='./menu.html' class="w3-bar-item w3-button">Menu</a>
+        <a href='./reservation.html' class="w3-bar-item w3-button">Reservations</a>
+        <a href='./admin.html' class="w3-bar-item w3-button">Admin Page</a>
+    </nav>
+
+    <main>
+    <div class="container" role="main">
+        <div class="mySlides fade" role="slide_images"> 
+            <picture>
+                <source srcset="images/restaurant_small.jpg" media="(max-width: 480px)">
+                <source srcset="images/restaurant_medium.jpg" media="(max-width: 1024px)">
+                <img src="images/restaurant2.jpg" style="width:100%" alt="outdoor view of restaurant">
+            </picture>
+            <p class="text">
+                A Wonderful Place to Dine in<br>
+                <span class="text2" role="description">
+                    Open from Wednesday to Friday<br>
+                    5:30pm to 10:00pm
+                </span>
+            </p>
+        </div>
+
+        <div class="mySlides fade" role="slide_images">
+            <picture>
+                <source srcset="images/kai_small.jpg" media="(max-width: 480px)">
+                <source srcset="images/kai_medium.jpg" media="(max-width: 1024px)">
+                <img src="images/kai.jpg" style="width:100%" alt="Maori kai">
+                <p class="text"><span style="color:white" role="description">A restaurant that specialises in Maori kai</span></p>
+            </picture>
+        </div>
+
+        <div class="mySlides fade" role="slide_images">
+            <picture>
+                <source srcset="images/indoors_small.jpg" media="(max-width: 480px)">
+                <img src="images/indoor2.jpg" style="width:100%" alt="indoor view of restaurant">
+            </picture>
+            <p class="text"><span style="color:white" role="description">Based in the Bay of Islands</span></p>
+        </div>
+    </div>
+    </main>
+
+    <footer class="footer w3-green">
+        <p>
+            @Copyright 2020 by Haukai Restaurant. All rights reserved.
+            <span class="policy" role="button"><a href='./policy.html'>Privacy policy</a></span>
+        </p>
+    </footer>
+
+    <script>
+        showSlides();
+    </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 1vw;
+    text-align: center;
+    background: teal;
+    color: white;
+    font-size: 3vw;
+}
+
+.footer {
+    display: block;
+    padding: 1vw;
+    font-size: 1.5vw;
+    background: teal;
+}
+
+.policy {
+    float: right;
+    margin-right: 5%;
+}
+
+.text{
+    font-family: 'Arial Rounded MT', sans-serif;
+    font-family: cursive;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    color: white;
+    white-space: nowrap;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.text2 {
+    font-size: 2vw;
+    color: black;
+    white-space: nowrap;
+}
+
+.container {
+    display: block;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    color: black;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+#map {
+    width: 100%;
+    height: 30vw;
+}
+
+/* Create two equal columns that float next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 3vw;
+    background-color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*responsive breakpoint - If the screen size is 600px wide or less*/
+@media (max-width:600px) {
+    .column {
+        min-width: 100%;
+    }
+}
+
+/*responsive text - If the screen size is 480px wide or more*/
+@media screen and (min-width: 769px) {
+    h1 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-align: left;
+        font-weight: bold;
+        font-size: 3vw
+    }
+
+    h2 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-align: left;
+        font-weight: bold;
+        font-size: 2vw
+    }
+
+    h3 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-align: left;
+        font-size: 1vw
+    }
+	
+	p {
+		padding-left: 2vw;
+		padding-right: 2vw;
+		font-size: 1vw;
+		text-align: left
+	}
+}
+
+/*responsive text - If the screen size is 480px wide or less*/
+@media screen and (max-width: 768px) {
+    h1 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-align: left;
+        font-weight: bold;
+        font-size: 5vw
+    }
+
+    h2 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-align: left;
+        font-weight: bold;
+        font-size: 4vw
+    }
+
+    h3 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-align: left;
+        font-size: 3vw
+    }
+	
+	p {
+		font-size: 2vw;
+		text-align: left;
+		padding-right: 2vw;
+		padding-left: 2vw
+	}
+}
+a:hover {
+  background-color: blue;
+}
