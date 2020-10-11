@@ -1,10 +1,124 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Private page</title>
-  </head>
-  <body>
-    <p>Only people who know the password should be able to see this page.</p>
-  </body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Haukai Restaurant Import CSV</title>    
+</head>
+
+<body>
+    <header class="header w3-green">
+        <strong>Haukai Restaurant</strong>
+    </header>
+    <nav class="w3-bar w3-black">
+        <a href='./index.html' class="w3-bar-item w3-button">Home</a>
+        <a href='./contact.html' class="w3-bar-item w3-button">Contact</a>
+        <a href='./calendar.html' class="w3-bar-item w3-button">Hours</a>
+        <a href='./menu.html' class="w3-bar-item w3-button">Menu</a>
+        <a href='./reservation.html' class="w3-bar-item w3-button">Reservations</a>
+		<a href='./admin.html' class="w3-bar-item w3-button">Admin Page</a>
+    </nav>
+
+    <!--Here is our page's main content-->
+    <main>
+        <meta charset="utf-8" />
+        <style>
+            #container{
+                margin:0 auto;
+                width:80%;
+                overflow:auto;
+            }
+            table.gridtable {
+                margin:0 auto;
+                width:95%;
+                overflow:auto;
+                font-family: helvetica,arial,sans-serif;
+                font-size:14px;
+                color:#333333;
+                border-width: 1px;
+                border-color: #666666;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            table.gridtable th {
+                border-width: 1px;
+                padding: 8px;
+                border-style: solid;
+                border-color: #666666;
+                background-color: #F6B4A5;
+            }
+            table.gridtable td {
+                border-width: 1px;
+                padding: 8px;
+                border-style: solid;
+                border-color: #666666;
+            }
+            .error {
+                color: white;
+                background-color: red;
+            }
+        </style>
+
+
+
+
+        <div class="container" id="container">
+            <table class="gridtable">
+                <thead>
+                    <tr>
+                        <th>ID number</th>
+                        <th>Employee Name</th>
+                        <th>Mobile Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        if (($csvfile = fopen("import.csv", "r")) !== FALSE) {
+                            while (($csvdata = fgetcsv($csvfile, 1000, ",")) !== FALSE) {
+                                $error='';
+                                $colcount = count($csvdata);
+                                echo '<tr>';
+                                if($colcount!=3) {
+                                    $error = 'Column count incorrect';
+                                } else {
+                                    //check data types
+                                    if(!is_numeric($csvdata[1])) $error.='error';
+                                }
+                                switch($error) {
+                                    case "Column count incorrect":
+                                        echo '<td></td>';
+                                        echo '<td></td>';
+                                        echo '<td class="error" >'.$error.'</td>';
+                                        break;
+                                    case "error":
+                                        echo '<td class="error">'.$csvdata[0].'</td>';
+                                        echo '<td class="error">'.$csvdata[1].'</td>';
+                                        echo '<td class="error">'.$csvdata[2].'</td>';
+                                        break;
+                                    default:
+                                        echo '<td>'.$csvdata[0].'</td>';
+                                        echo '<td>'.$csvdata[1].'</td>';
+                                        echo '<td>'.$csvdata[2].'</td>';
+                                        
+                                }
+                                echo '</tr>';
+                            }
+                            fclose($csvfile);
+                        }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+
+    <footer class="footer w3-green">
+        <p>
+            @Copyright 2020 by Haukai Restaurant. All rights reserved.
+            <span class="policy" role="button"><a href='./policy.html'>Privacy policy</a></span>
+        </p>
+    </footer>
+</body>
 </html>
