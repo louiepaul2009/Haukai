@@ -22,18 +22,6 @@ include "navigation.html";
 ?>
 
 <body>
-    <header class="header w3-green">
-        <strong>Haukai Restaurant</strong>
-    </header>
-    <nav class="w3-bar w3-black">
-        <a href='./index.html' class="w3-bar-item w3-button">Home</a>
-        <a href='./contact.html' class="w3-bar-item w3-button">Contact</a>
-        <a href='./calendar.html' class="w3-bar-item w3-button">Hours</a>
-        <a href='./menu.php' class="w3-bar-item w3-button">Menu</a>
-        <a href='./reservation.html' class="w3-bar-item w3-button">Reservations</a>
-        <a href='./admin.html' class="w3-bar-item w3-button">Admin Page</a>
-    </nav>
-
     <main>
     <div class="container" role="main">
         <div class="mySlides fade" role="slide_images"> 
