@@ -4,29 +4,14 @@
 include "header.html";
 ?>
 <head>
-    <title>Haukai Restaurant Contact page</title>
+    <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDLw5JWX3NxVKENjCrTxECQd0Q5dMp1Xkk&callback=initMap' type='text/javascript'></script>
+	<title>Haukai Restaurant Contact page</title>
 </head>
 <?php
 include "navigation.html";
 ?>
 
-<head>
-    <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDLw5JWX3NxVKENjCrTxECQd0Q5dMp1Xkk&callback=initMap' type='text/javascript'></script>
-	<title>Haukai Restaurant Contact page</title>
-</head>
 <body>
-    <header class="header w3-green">
-        <strong>Haukai Restaurant</strong>
-    </header>
-    <nav class="w3-bar w3-black">
-        <a href='./index.html' class="w3-bar-item w3-button">Home</a>
-        <a href='./contact.html' class="w3-bar-item w3-button">Contact</a>
-        <a href='./calendar.html' class="w3-bar-item w3-button">Hours</a>
-        <a href='./menu.html' class="w3-bar-item w3-button">Menu</a>
-        <a href='./reservation.html' class="w3-bar-item w3-button">Reservations</a>
-        <a href='./admin.html' class="w3-bar-item w3-button">Admin Page</a>
-    </nav>
-
     <div class="row" role="contact and location details">
         <div class="column" role="contact details">
             <h2>Contact us</h2>
