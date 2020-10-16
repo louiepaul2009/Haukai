@@ -110,7 +110,7 @@ include "navigation.html";
     <!-- And here is our main footer that is used across all the pages of our website -->
     <?php
         echo '</div></div>';
-        require_once "footer.html";
+        include_once("home.html");
     ?>
     
 </body>
