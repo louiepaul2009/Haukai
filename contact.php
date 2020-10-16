@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
+<?php
+include "header.html";
+?>
 <head>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src='./scripts/sitemap.js'></script>
+    <title>Haukai Restaurant Contact page</title>
+</head>
+<?php
+include "navigation.html";
+?>
+
+<head>
     <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDLw5JWX3NxVKENjCrTxECQd0Q5dMp1Xkk&callback=initMap' type='text/javascript'></script>
 	<title>Haukai Restaurant Contact page</title>
 </head>
@@ -37,11 +44,9 @@
     </div>
 
     <!-- And here is our main footer that is used across all the pages of our website -->
-    <footer class="footer w3-green">
-        <p>
-            @Copyright 2020 by Haukai Restaurant. All rights reserved.
-            <span class="policy" role="button"><a href='./policy.html'>Privacy policy</a></span>
-        </p>
-    </footer>
+    <?php
+        echo '</div></div>';
+        include_once("footer.html");
+    ?>
 </body>
 </html>

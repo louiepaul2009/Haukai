@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+<?php
+include "header.html";
+?>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="styles/styles.css">
     <title>Haukai Restaurant Hours page</title>
 </head>
+<?php
+include "navigation.html";
+?>
 
 <body>
     <header class="header w3-green">
@@ -28,12 +32,9 @@
     </main>
 
     <!-- And here is our main footer that is used across all the pages of our website -->
-
-    <footer class="footer w3-green">
-        <p>
-            @Copyright 2020 by Haukai Restaurant. All rights reserved.
-            <span class="policy" role="button"><a href='./policy.html'>Privacy policy</a></span>
-        </p>
-    </footer>
+    <?php
+        echo '</div></div>';
+        include_once("footer.html");
+    ?>
 </body>
 </html>

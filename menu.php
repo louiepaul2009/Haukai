@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+<html>
 <?php
 include "header.html";
+?>
+<head>
+    <title>Haukai Restaurant Menu page</title>
+</head>
+<?php
 include "navigation.html";
 ?>
-
-<html>
 
 <body>
     <!--Here is our page's main content-->
@@ -110,7 +114,7 @@ include "navigation.html";
     <!-- And here is our main footer that is used across all the pages of our website -->
     <?php
         echo '</div></div>';
-        include_once("home.html");
+        include_once("footer.html");
     ?>
     
 </body>
