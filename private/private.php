@@ -18,8 +18,7 @@
         <a href='../calendar.html' class="w3-bar-item w3-button">Hours</a>
         <a href='../menu.html' class="w3-bar-item w3-button">Menu</a>
         <a href='../reservation.html' class="w3-bar-item w3-button">Reservations</a>
-		    <a href='../admin.html' class="w3-bar-item w3-button">Admin Page</a>
-    </nav>
+		</nav>
 
           
 	<script type="text/javascript">
