@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <?php
-  include "header.html";
-  ?>
-  <head>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles/styles.css">
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
     <title>Haukai Restaurant Private page</title>    
-  </head>
+</head>
 
 <body>
     <header class="header w3-green">
