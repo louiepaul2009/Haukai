@@ -77,9 +77,11 @@
 	<br>
 
     <!-- And here is our main footer that is used across all the pages of our website -->
-    <?php
-        echo '</div></div>';
-        include_once("footer.html");
-    ?>
+    <footer class="footer w3-green">
+    <p>
+        @Copyright 2020 by Haukai Restaurant. All rights reserved.
+        <span class="policy" role="button"><a href='../policy.html'>Privacy policy</a></span>
+    </p>
+</footer>
 </body>
 </html>
