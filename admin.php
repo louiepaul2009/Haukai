@@ -16,7 +16,7 @@ include "navigation.html";
         <div class="container" role="Admin">
             < <body>
 				<p>This page is restricted for Haukai Staff and Administration only.</p>
-				<p>Click <a href="private/private.html">here</a> to access the private page.</p>
+				<p>Click <a href="private/private.php">here</a> to access the private page.</p>
 			</body>
         </div>
     </main>

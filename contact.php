@@ -4,7 +4,7 @@
 include "header.html";
 ?>
 <head>
-    <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDLw5JWX3NxVKENjCrTxECQd0Q5dMp1Xkk&callback=initMap' type='text/javascript'></script>
+    
 	<title>Haukai Restaurant Contact page</title>
 </head>
 <?php
@@ -22,6 +22,7 @@ include "navigation.html";
                 Email: bookings@haukairestaurant.co.nz<br>
             </h3>
         </div>
+        <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDLw5JWX3NxVKENjCrTxECQd0Q5dMp1Xkk&callback=initMap' type='text/javascript'></script>
         <div class="column" role="location map">
             <h2>How to reach us</h2>
             <div role="map" id="map"></div>
