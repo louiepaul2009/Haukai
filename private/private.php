@@ -13,11 +13,11 @@
         <strong>Haukai Restaurant</strong>
     </header>
     <nav class="w3-bar w3-black">
-        <a href='../index.html' class="w3-bar-item w3-button">Home</a>
-        <a href='../contact.html' class="w3-bar-item w3-button">Contact</a>
-        <a href='../calendar.html' class="w3-bar-item w3-button">Hours</a>
-        <a href='../menu.html' class="w3-bar-item w3-button">Menu</a>
-        <a href='../reservation.html' class="w3-bar-item w3-button">Reservations</a>
+        <a href='../index.php' class="w3-bar-item w3-button">Home</a>
+        <a href='../contact.php' class="w3-bar-item w3-button">Contact</a>
+        <a href='../calendar.php' class="w3-bar-item w3-button">Hours</a>
+        <a href='../menu.php' class="w3-bar-item w3-button">Menu</a>
+        <a href='../reservation.php' class="w3-bar-item w3-button">Reservations</a>
 		</nav>
 
           
